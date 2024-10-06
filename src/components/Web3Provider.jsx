@@ -9,13 +9,13 @@ import { ConnectKitProvider, getDefaultConfig } from "connectkit";
 const config = createConfig(
   getDefaultConfig({
     appName: "ConnectKit Next.js demo",
-    walletConnectProjectId: process.env.PROJECT_ID!,
+    walletConnectProjectId: process.env.PROJECT_ID,
   })
 );
 
 const queryClient = new QueryClient();
 
-export const Web3Provider = ({ children }: { children: React.ReactNode }) => {
+export const Web3Provider = ({ children }) => {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>

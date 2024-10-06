@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.jsx", "src/components/WalletConnect.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/page.jsx", "src/components/WalletConnect.jsx", "src/components/Navbar.jsx", "src/components/Swap.jsx", "src/components/Web3Provider.jsx"],
   "exclude": ["node_modules"]
 }
