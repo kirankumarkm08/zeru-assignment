@@ -7,14 +7,9 @@ import { useDisconnect } from "wagmi";
 import DemoSwap from "@/components/DemoSwap";
 
 const page = () => {
-  const [isClient, setIsClient] = useState(false);
-  useEffect(() => setIsClient(true), []);
   const { address } = useAccount();
   const { disconnect } = useDisconnect();
 
-  useEffect(() => {
-    setIsClient(true); 
-  }, []);
   return (
     <div className="flex flex-col h-screen w-full items-center justify-center gap-3">
       <div>{isClient && address && `wallet address: ${address}`}</div>
