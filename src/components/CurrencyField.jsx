@@ -1,13 +1,6 @@
 import React from "react";
 
-const CurrencyField = ({
-  field,
-  tokenName,
-  getSwapPrice,
-  value,
-  signer,
-  balance,
-}) => {
+const CurrencyField = ({ tokenName }) => {
   // const getPrice = (value) => {
   //   getSwapPrice(value);
   // };
@@ -15,7 +8,7 @@ const CurrencyField = ({
   return (
     <div>
       <input
-        value={value}
+        value={"value"}
         // onBlur={(e) => field === "input" && getPrice(e.target.value)}
         className="outline-none  bg-transparent text-2xl  "
         placeholder="0"

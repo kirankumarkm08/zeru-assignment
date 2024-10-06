@@ -13,7 +13,7 @@ const page = () => {
   const { disconnect } = useDisconnect();
 
   useEffect(() => {
-    setIsClient(true); // This will only run on the client
+    setIsClient(true); 
   }, []);
   return (
     <div className="flex flex-col h-screen w-full items-center justify-center gap-3">
