@@ -1,19 +1,18 @@
 "use client";
 
 import React from "react";
-import { useAccount } from "wagmi";
 import { useState, useEffect } from "react";
-import { useDisconnect } from "wagmi";
+import { useDisconnect, useAccount } from "wagmi";
 import DemoSwap from "@/components/DemoSwap";
 
-const page = () => {
+const Home = () => {
   const { address } = useAccount();
   const { disconnect } = useDisconnect();
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
-  });
+  }, []);
 
   return (
     <div className="flex flex-col h-screen w-full items-center justify-center gap-3">
@@ -38,4 +37,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;

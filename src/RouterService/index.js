@@ -1,13 +1,8 @@
-const { AlphaRouter } = require("@uniswap/smart-order-router");
-const {
-  Token,
-  CurrencyAmount,
-  TradeType,
-  Percent,
-} = require("@uniswap/sdk-core");
-const { ethers, BigNumber } = require("ethers");
-const JSBI = require("jsbi");
-const ERC20ABI = require("./abi.json");
+import { AlphaRouter } from "@uniswap/smart-order-router";
+import { Token, CurrencyAmount, TradeType, Percent } from "@uniswap/sdk-core";
+import { ethers, BigNumber } from "ethers";
+import JSBI from "jsbi";
+import { ERC20ABI } from "./abi.json";
 
 const V3_SWAP_ROUTER_ADDRESS = "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45";
 
