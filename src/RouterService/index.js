@@ -9,11 +9,9 @@ const V3_SWAP_ROUTER_ADDRESS = "0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45";
 const TESTNET_URL = process.env.INFURA_URL_TESTNET;
 
 //INFURA_URL_TESTNET
-const chainId = 11155111; // Ropsten testnet chain ID
+const chainId = 11155111; 
 
-const web3Provider = new ethers.providers.JsonRpcProvider(
-  `https://sepolia.infura.io/v3/86efb94627e147b8837ae88237d517fc`
-);
+const web3Provider = new ethers.providers.JsonRpcProvider(TESTNET_URL);
 const router = new AlphaRouter({ chainId: chainId, provider: web3Provider });
 
 const name0 = "Wrapped Ether";
