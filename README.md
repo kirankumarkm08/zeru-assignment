@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ZERU FINANCE ASSIGNMENT
 
-## Getting Started
+Overview
+zeru finance assignment
 
-First, run the development server:
+Core Features
+Feature 1: Implement Web3 wallet connection
+Feature 2: Display connected wallet address
+Feature 3: Support wallet disconnection
 
-```bash
+Technologies Used
+Frontend: React.js, Next.js, Tailwind CSS,
+ethers.js for Ethereum blockchain interactions
+Deployment: Vercel
+
+Setup Instructions
+
+Prerequisites
+Make sure you have the following installed:
+Node.js (v14 or later)
+@uniswap/smart-order-router
+@uniswap/v3-sdk
+ethers
+wagmi
+
+Installation
+
+1.clone the repo:
+https://github.com/kirankumarkm08/zeru-assignment.git
+
+2.Install Dependencies
+npm install
+
+3.Create a .env file in the root directory and add the necessary environment variables:
+REACT_APP_TESTNET_URL=https://your_testnet_url
+REACT_APP_CHAIN_ID=3 # Ropsten Testnet
+
+4.Start the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Usage:
+[Briefly describe how to use the application, e.g., connect a wallet, swap tokens, etc.]
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Architecture Overview:
+Project Structure
+graphql
+Copy code
+yourproject/
+├── public/ # Static files
+├── src/
+│ ├── components/ # Reusable components
+│ ├── services/ # API and contract interaction
+│ ├── hooks/ # Custom hooks
+│ ├── pages/ # Next.js pages
+│ ├── styles/ # CSS/Tailwind styles
+│ └── utils/ # Utility functions
+├── package.json # Project dependencies and scripts
+└── README.md # Project documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Core Components:
+[Component Name]: [Description of what this component does]
+[Service Name]: [Description of the service, e.g., handles contract interactions]
+[Hook Name]: [Description of any custom hooks used in the project]
 
-## Learn More
+Flow:
+User Interaction: Users interact with the frontend to swap tokens.
+State Management: The application manages state using [e.g., React hooks, Context API].
+Smart Contract Interaction: The application interacts with smart contracts using [e.g., ethers.js].
+Network Requests: The app makes requests to the blockchain via [e.g., Infura, Alchemy].
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Acknowledgements
+Uniswap V3 Smart Contracts - https://docs.uniswap.org/contracts/v3/overview
+chatGPT - error explaination,information for unknown command
